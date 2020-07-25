@@ -1,7 +1,7 @@
+# 幸運轉盤
 <img src="https://imagizer.imageshack.com/img922/4331/vwSdBc.png"/>
 
-# 幸運轉盤
-
+Demo: https://tlhsieh0610.github.io/SpinTheWheel/
 ## 簡單的網頁抽獎小遊戲
 
 **使用技術:**
