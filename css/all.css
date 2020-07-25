@@ -1,0 +1,222 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1920px;
+  height: 1080px;
+  background-color: #F0BEFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .result {
+  font-size: 90px;
+  background-color: black;
+  color: white;
+  opacity: 0;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 90px;
+  position: absolute;
+  text-align: center;
+  padding: 25px;
+  z-index: 11;
+  visibility: hidden;
+}
+
+.container .result.showresule {
+  -webkit-transition-delay: 1.3s;
+          transition-delay: 1.3s;
+  opacity: 0.5;
+  visibility: visible;
+}
+
+.container .circle {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background-color: #FAEBD7;
+  margin: auto auto;
+  border: 4px solid #343BAA;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .circle span {
+  color: #0000FF;
+  font-size: 20px;
+}
+
+.container .circle .sector {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #5858B9;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.container .circle .sector p {
+  -webkit-transform: skewY(30deg) rotate(30deg);
+          transform: skewY(30deg) rotate(30deg);
+  position: absolute;
+  bottom: 37%;
+  left: 22%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.container .circle .press {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #FF1493;
+  border: 2px solid blue;
+  position: absolute;
+  -webkit-transform: translateX(-50px) translateY(50px);
+          transform: translateX(-50px) translateY(50px);
+  bottom: 50%;
+  left: 50%;
+  z-index: 10;
+  text-align: center;
+  line-height: 100px;
+}
+
+.container .circle .pointer {
+  width: 200px;
+  height: 5px;
+  border-radius: 15px;
+  background-color: red;
+  position: absolute;
+  bottom: 49.5%;
+  left: 50%;
+  z-index: 9;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.active {
+  background-color: #FFD700 !important;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.sector.s0 {
+  -webkit-transform: rotate(-30deg) skewY(-30deg);
+          transform: rotate(-30deg) skewY(-30deg);
+}
+
+.container .circle .sector:nth-child(odd) {
+  background: #FAEBD7;
+}
+
+.sector.s1 {
+  -webkit-transform: rotate(30deg) skewY(-30deg);
+          transform: rotate(30deg) skewY(-30deg);
+}
+
+.container .circle .sector:nth-child(odd) {
+  background: #FAEBD7;
+}
+
+.sector.s2 {
+  -webkit-transform: rotate(90deg) skewY(-30deg);
+          transform: rotate(90deg) skewY(-30deg);
+}
+
+.container .circle .sector:nth-child(odd) {
+  background: #FAEBD7;
+}
+
+.sector.s3 {
+  -webkit-transform: rotate(150deg) skewY(-30deg);
+          transform: rotate(150deg) skewY(-30deg);
+}
+
+.container .circle .sector:nth-child(odd) {
+  background: #FAEBD7;
+}
+
+.sector.s4 {
+  -webkit-transform: rotate(210deg) skewY(-30deg);
+          transform: rotate(210deg) skewY(-30deg);
+}
+
+.container .circle .sector:nth-child(odd) {
+  background: #FAEBD7;
+}
+
+.sector.s5 {
+  -webkit-transform: rotate(270deg) skewY(-30deg);
+          transform: rotate(270deg) skewY(-30deg);
+}
+
+.container .circle .sector:nth-child(odd) {
+  background: #FAEBD7;
+}
+/*# sourceMappingURL=all.css.map */

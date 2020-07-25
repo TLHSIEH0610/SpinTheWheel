@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
+    <link rel="stylesheet" href="./css/all.css">    
+    <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <div class="result" :class="{showresule: show == true}">恭喜獲得: {{ reward }}</div>
+      <div class="circle">
+        <div :class="[setClass(key),{active : active === key}]" v-for="(item, key) in Products" :key="key"><p>{{ item.reward }}</p></div>
+        <div class="press" @click="Play"><span>點擊抽獎</span></div>
+        <div class="pointer" :style="pointerR"></div>
+      </div>
+    </div>
+  </div>
+    
+
+<script src="all.js"></script>
+</body>
+</html>
